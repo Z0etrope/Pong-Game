@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <h2 id="Prompt">Game Start!</h2> 
+        <svg id="canvas" width="600" height="600">
+            <text id="leftScore" x="120" y="70" font-size="50px" fill="white">0</text>
+            <text id="rightScore" x="440" y="70" font-size="50px" fill="white">0</text>
+        </svg>
+        <h2>Pong game Intro:</h2>
+        <p>A simple pong game vs AI made using Rxjs. Press a button to start the game. The ball will then move, bouncing by the bounds of
+             the map. You are playing as the left paddle and the A.I. will play as the right paddle. Use 'W' key to move the left paddle up or 'S' to move it down.
+             First one to reach 7 point wins the game.
+        </p>
+    </body>
+</html>
